@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>example</title>
-    <link href="http://localhost:3030" rel="manifest" />
+    <script>
+      const s = document.createElement('link');
+
+      s.rel = 'manifest';
+      s.href = 'http://localhost:3030';
+
+      document.getElementsByTagName('head')[0].appendChild(s);
+    </script>
   </head>
   <body>
     <h1>Example application</h1>
